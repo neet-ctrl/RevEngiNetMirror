@@ -1,0 +1,61 @@
+[2026-06-25 18:25:05.207 Uid(value=10342):9741:9772 E/ashmem]
+Pinning is deprecated since Android Q. Please use trim or other methods.
+
+
+[2026-06-25 18:25:05.667 Uid(value=10342):9741:9817 E/external.castle]
+No package ID 6a found for resource ID 0x6a0b0013.
+
+
+[2026-06-25 18:25:05.794 Uid(value=10342):9741:9741 E/AriaConfig]
+java.io.FileNotFoundException: aria_config.xml
+
+
+[2026-06-25 18:25:05.859 Uid(value=10342):9741:9830 E/ActivityThread]
+Failed to find provider info for com.xiaomi.market.provider.DirectMailProvider
+
+
+[2026-06-25 18:25:06.010 Uid(value=10342):9741:9857 E/QT]
+[QT]file does not exist
+
+
+[2026-06-25 18:25:06.358 Uid(value=10342):9741:9741 E/ZuiHandWritingManager]
+Constructor called
+
+
+[2026-06-25 18:25:06.476 Uid(value=10342):9741:9741 E/external.castle]
+[perfctl] 9741 9741 FPSGO ver:0
+
+
+[2026-06-25 18:25:06.476 Uid(value=10342):9741:9741 E/external.castle]
+[perfctl] 0 0 0 0
+
+
+[2026-06-25 18:25:06.661 Uid(value=10342):9741:9915 E/chromium]
+[0625/182506.651630:ERROR:android_webview/browser/variations/variations_seed_loader.cc:39] Seed missing signature.
+
+
+[2026-06-25 18:25:07.408 Uid(value=10342):9741:9967 E/adservices]
+Failed to bind to measurement service: com.android.adservices.shared.common.exception.ServiceUnavailableException: Service is not available.
+
+
+[2026-06-25 18:25:12.105 Uid(value=10342):9741:9741 E/AndroidRuntime]
+FATAL EXCEPTION: main
+Process: com.external.castle, PID: 9741
+java.lang.VerifyError: Verifier rejected class rc.h: boolean rc.h.B(): [0xFFFFFFFF] register index out of range (2 >= 2)
+ boolean rc.h.C(): [0xFFFFFFFF] register index out of range (2 >= 2) (declaration of 'rc.h' appears in /data/app/~~rpxf96X9wyKayWYv4KZEog==/com.external.castle-deMBRwAb7ZqYJp5CZbEOEg==/base.apk)
+	at com.gxgx.daqiandy.app.c.T(SourceFile:14)
+	at com.gxgx.daqiandy.app.c$e0.invokeSuspend(SourceFile:141)
+	at com.gxgx.daqiandy.app.c$e0.invoke(SourceFile:2)
+	at com.gxgx.daqiandy.app.c$e0.invoke(SourceFile:1)
+	at com.gxgx.daqiandy.app.c$o0.invokeSuspend(SourceFile:74)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(SourceFile:12)
+	at kotlinx.coroutines.DispatchedTask.run(SourceFile:129)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(SourceFile:4)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(SourceFile:3)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(SourceFile:1)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(SourceFile:34)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(SourceFile:29)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(SourceFile:1)
+	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [StandaloneCoroutine{Cancelling}@d8bbe36, Dispatchers.IO]
+	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [StandaloneCoroutine{Cancelled}@8958a09, Dispatchers.IO]
+

@@ -1,0 +1,20 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "9tatgEDwHJ40Y7MBQej4H"
+uri = "file://output/calc_signed_apk.tar.gz"
+type = "unspecified"
+title = "calc_signed.apk (compressed) — Extract and install on Android"
+
+[[outputs]]
+id = "CFrv-J6XOCz8_bUWfmc51"
+uri = "file://output/castle_patched.tar.gz"
+type = "unspecified"
+title = "castle_patched.apk — 10-min restriction removed"
+
+[[outputs]]
+id = "NQUuylZOoa1D_IzBzPiUY"
+uri = "file://output/castle_final.tar.gz"
+type = "unspecified"
+title = "castle_final.tar.gz — Patch 15 (full video unlock)"

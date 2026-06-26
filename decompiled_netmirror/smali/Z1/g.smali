@@ -1,0 +1,18 @@
+.class public final LZ1/g;
+.super Landroid/text/style/ForegroundColorSpan;
+.source "SourceFile"
+
+# interfaces
+.implements LZ1/i;
+
+
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
+
+    .line 4
+    return-void
+.end method

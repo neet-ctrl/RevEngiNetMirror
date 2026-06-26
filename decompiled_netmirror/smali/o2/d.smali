@@ -1,0 +1,177 @@
+.class public final Lo2/d;
+.super Lo2/b;
+.source "SourceFile"
+
+
+# instance fields
+.field private final e:F
+
+.field private final f:F
+
+.field private final g:F
+
+.field private final h:F
+
+.field private final i:I
+
+
+# direct methods
+.method public constructor <init>(Ln2/o;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "handler"
+
+    .line 3
+    invoke-static {p1, v0}, LD2/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    invoke-direct {p0, p1}, Lo2/b;-><init>(Ln2/d;)V
+
+    .line 9
+    invoke-virtual {p1}, Ln2/d;->J()F
+
+    .line 12
+    move-result v0
+
+    .line 13
+    iput v0, p0, Lo2/d;->e:F
+
+    .line 15
+    invoke-virtual {p1}, Ln2/d;->K()F
+
+    .line 18
+    move-result v0
+
+    .line 19
+    iput v0, p0, Lo2/d;->f:F
+
+    .line 21
+    invoke-virtual {p1}, Ln2/d;->H()F
+
+    .line 24
+    move-result v0
+
+    .line 25
+    iput v0, p0, Lo2/d;->g:F
+
+    .line 27
+    invoke-virtual {p1}, Ln2/d;->I()F
+
+    .line 30
+    move-result v0
+
+    .line 31
+    iput v0, p0, Lo2/d;->h:F
+
+    .line 33
+    invoke-virtual {p1}, Ln2/o;->V0()I
+
+    .line 36
+    move-result p1
+
+    .line 37
+    iput p1, p0, Lo2/d;->i:I
+
+    .line 39
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lcom/facebook/react/bridge/WritableMap;)V
+    .locals 3
+
+    .line 1
+    const-string v0, "eventData"
+
+    .line 3
+    invoke-static {p1, v0}, LD2/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    invoke-super {p0, p1}, Lo2/b;->a(Lcom/facebook/react/bridge/WritableMap;)V
+
+    .line 9
+    iget v0, p0, Lo2/d;->e:F
+
+    .line 11
+    invoke-static {v0}, Lcom/facebook/react/uimanager/f0;->f(F)F
+
+    .line 14
+    move-result v0
+
+    .line 15
+    float-to-double v0, v0
+
+    .line 16
+    const-string v2, "x"
+
+    .line 18
+    invoke-interface {p1, v2, v0, v1}, Lcom/facebook/react/bridge/WritableMap;->putDouble(Ljava/lang/String;D)V
+
+    .line 21
+    iget v0, p0, Lo2/d;->f:F
+
+    .line 23
+    invoke-static {v0}, Lcom/facebook/react/uimanager/f0;->f(F)F
+
+    .line 26
+    move-result v0
+
+    .line 27
+    float-to-double v0, v0
+
+    .line 28
+    const-string v2, "y"
+
+    .line 30
+    invoke-interface {p1, v2, v0, v1}, Lcom/facebook/react/bridge/WritableMap;->putDouble(Ljava/lang/String;D)V
+
+    .line 33
+    iget v0, p0, Lo2/d;->g:F
+
+    .line 35
+    invoke-static {v0}, Lcom/facebook/react/uimanager/f0;->f(F)F
+
+    .line 38
+    move-result v0
+
+    .line 39
+    float-to-double v0, v0
+
+    .line 40
+    const-string v2, "absoluteX"
+
+    .line 42
+    invoke-interface {p1, v2, v0, v1}, Lcom/facebook/react/bridge/WritableMap;->putDouble(Ljava/lang/String;D)V
+
+    .line 45
+    iget v0, p0, Lo2/d;->h:F
+
+    .line 47
+    invoke-static {v0}, Lcom/facebook/react/uimanager/f0;->f(F)F
+
+    .line 50
+    move-result v0
+
+    .line 51
+    float-to-double v0, v0
+
+    .line 52
+    const-string v2, "absoluteY"
+
+    .line 54
+    invoke-interface {p1, v2, v0, v1}, Lcom/facebook/react/bridge/WritableMap;->putDouble(Ljava/lang/String;D)V
+
+    .line 57
+    const-string v0, "duration"
+
+    .line 59
+    iget v1, p0, Lo2/d;->i:I
+
+    .line 61
+    invoke-interface {p1, v0, v1}, Lcom/facebook/react/bridge/WritableMap;->putInt(Ljava/lang/String;I)V
+
+    .line 64
+    return-void
+.end method

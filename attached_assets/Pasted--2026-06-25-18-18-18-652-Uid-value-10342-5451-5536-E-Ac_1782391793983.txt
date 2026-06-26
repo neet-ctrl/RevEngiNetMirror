@@ -1,0 +1,31 @@
+[2026-06-25 18:18:18.652 Uid(value=10342):5451:5536 E/ActivityThread]
+Failed to find provider info for com.xiaomi.market.provider.DirectMailProvider
+
+
+[2026-06-25 18:18:20.649 Uid(value=10342):5451:5451 E/AndroidRuntime]
+FATAL EXCEPTION: main
+Process: com.external.castle, PID: 5451
+java.lang.VerifyError: Verifier rejected class ac.m: void ac.m.a(android.app.Activity): [0xFFFFFFFF] register index out of range (2 >= 2) (declaration of 'ac.m' appears in /data/app/~~md0yvIMR6xmB6yW_H7KMtw==/com.external.castle-h3z6Rb9qqFvoLdP7V_DLeQ==/base.apk)
+	at com.gxgx.daqiandy.ui.main.MainViewModel.q0(SourceFile:6)
+	at com.gxgx.daqiandy.ui.main.MainActivity.initData(SourceFile:255)
+	at com.gxgx.base.base.BaseActivity.onCreate(SourceFile:59)
+	at com.gxgx.base.base.BaseMvvmActivity.onCreate(SourceFile:1)
+	at com.gxgx.daqiandy.ui.main.MainActivity.onCreate(SourceFile:1)
+	at android.app.Activity.performCreate(Activity.java:9240)
+	at android.app.Activity.performCreate(Activity.java:9218)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1539)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4509)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4932)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:222)
+	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:3043)
+	at android.os.Handler.dispatchMessage(Handler.java:120)
+	at android.os.Looper.loopOnce(Looper.java:249)
+	at android.os.Looper.loop(Looper.java:339)
+	at android.app.ActivityThread.main(ActivityThread.java:9785)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:618)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1022)
+

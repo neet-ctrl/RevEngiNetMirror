@@ -1,0 +1,205 @@
+[2026-06-25 18:30:09.532 Uid(value=10342):12164:12185 E/ashmem]
+Pinning is deprecated since Android Q. Please use trim or other methods.
+
+
+[2026-06-25 18:30:09.866 Uid(value=10342):12164:12229 E/external.castle]
+No package ID 6a found for resource ID 0x6a0b0013.
+
+
+[2026-06-25 18:30:09.970 Uid(value=10342):12164:12164 E/AriaConfig]
+java.io.FileNotFoundException: aria_config.xml
+
+
+[2026-06-25 18:30:10.003 Uid(value=10342):12164:12244 E/ActivityThread]
+Failed to find provider info for com.xiaomi.market.provider.DirectMailProvider
+
+
+[2026-06-25 18:30:10.103 Uid(value=10342):12164:12279 E/QT]
+[QT]file does not exist
+
+
+[2026-06-25 18:30:10.373 Uid(value=10342):12164:12164 E/ZuiHandWritingManager]
+Constructor called
+
+
+[2026-06-25 18:30:10.473 Uid(value=10342):12164:12164 E/external.castle]
+[perfctl] 12164 12164 FPSGO ver:0
+
+
+[2026-06-25 18:30:10.473 Uid(value=10342):12164:12164 E/external.castle]
+[perfctl] 0 0 0 0
+
+
+[2026-06-25 18:30:10.563 Uid(value=10342):12164:12329 E/chromium]
+[0625/183010.562930:ERROR:android_webview/browser/variations/variations_seed_loader.cc:39] Seed missing signature.
+
+
+[2026-06-25 18:30:10.909 Uid(value=10342):12164:12369 E/adservices]
+Failed to bind to measurement service: com.android.adservices.shared.common.exception.ServiceUnavailableException: Service is not available.
+
+
+[2026-06-25 18:30:16.013 Uid(value=10342):12164:12164 E/ZuiHandWritingManager]
+Constructor called
+
+
+[2026-06-25 18:30:17.585 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[2026-06-25 18:30:17.586 Uid(value=10342):12164:12164 E/ZuiHandWritingManager]
+Constructor called
+
+
+[2026-06-25 18:30:17.586 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ Thread: DefaultDispatcher-worker-13
+
+
+[2026-06-25 18:30:17.586 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+
+
+[2026-06-25 18:30:17.586 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ BaseViewModel$launch$1.invokeSuspend  (SourceFile:104)
+
+
+[2026-06-25 18:30:17.586 Uid(value=10342):12164:12164 E/external.castle]
+hiddenapi: Accessing hidden field Landroid/view/inputmethod/InputMethodManager;->mCurRootView:Landroid/view/ViewRootImpl; (runtime_flags=0, domain=platform, api=blocked) from Lcom/jeremyliao/liveeventbus/utils/AppUtils$ActivityLifecycleImpl; (domain=app, TargetSdkVersion=35) using reflection: denied
+
+
+[2026-06-25 18:30:17.586 Uid(value=10342):12164:12164 E/external.castle]
+hiddenapi: Accessing hidden field Landroid/view/inputmethod/InputMethodManager;->mServedView:Landroid/view/View; (runtime_flags=0, domain=platform, api=blocked) from Lcom/jeremyliao/liveeventbus/utils/AppUtils$ActivityLifecycleImpl; (domain=app, TargetSdkVersion=35) using reflection: denied
+
+
+[2026-06-25 18:30:17.586 Uid(value=10342):12164:12164 E/external.castle]
+hiddenapi: Accessing hidden field Landroid/view/inputmethod/InputMethodManager;->mNextServedView:Landroid/view/View; (runtime_flags=0, domain=platform, api=blocked) from Lcom/jeremyliao/liveeventbus/utils/AppUtils$ActivityLifecycleImpl; (domain=app, TargetSdkVersion=35) using reflection: denied
+
+
+[2026-06-25 18:30:17.586 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│    v.g  (SourceFile:10)
+
+
+[2026-06-25 18:30:17.587 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+
+
+[2026-06-25 18:30:17.587 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ crash : kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@69319cc
+
+
+[2026-06-25 18:30:17.587 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[2026-06-25 18:30:17.588 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[2026-06-25 18:30:17.592 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ Thread: DefaultDispatcher-worker-13
+
+
+[2026-06-25 18:30:17.592 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+
+
+[2026-06-25 18:30:17.592 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ c.c  (SourceFile:372)
+
+
+[2026-06-25 18:30:17.592 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│    v.f  (SourceFile:11)
+
+
+[2026-06-25 18:30:17.592 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+
+
+[2026-06-25 18:30:17.592 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ HandleExceptionUtil
+
+
+[2026-06-25 18:30:17.593 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[2026-06-25 18:30:17.593 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[2026-06-25 18:30:17.593 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ Thread: DefaultDispatcher-worker-13
+
+
+[2026-06-25 18:30:17.593 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ c.b  (SourceFile:2)
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│    v.f  (SourceFile:11)
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ HandleExceptionUtil
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ Thread: DefaultDispatcher-worker-13
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ c.c  (SourceFile:454)
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│    v.f  (SourceFile:11)
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+│ HandleExceptionUtil
+
+
+[2026-06-25 18:30:17.594 Uid(value=10342):12164:12402 E/PRETTY_LOGGER]
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[2026-06-25 18:30:18.132 Uid(value=10342):12164:12402 E/AndroidRuntime]
+FATAL EXCEPTION: DefaultDispatcher-worker-13
+Process: com.external.castle, PID: 12164
+java.lang.VerifyError: Verifier rejected class com.gxgx.daqiandy.member.VipFilmHelper$c$c$a: void com.gxgx.daqiandy.member.VipFilmHelper$c$c$a.onFinish(): [0xFFFFFFFF] register index out of range (1 >= 1) (declaration of 'com.gxgx.daqiandy.member.VipFilmHelper$c$c$a' appears in /data/app/~~OHt50jkHWY7I_xsxCKPLIw==/com.external.castle-KzxXlH3PIkJ09-ChRjPxdw==/base.apk)
+	at com.gxgx.daqiandy.member.VipFilmHelper$c$c.invokeSuspend(SourceFile:21)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(SourceFile:12)
+	at kotlinx.coroutines.DispatchedTask.run(SourceFile:129)
+	at android.os.Handler.handleCallback(Handler.java:1012)
+	at android.os.Handler.dispatchMessage(Handler.java:113)
+	at android.os.Looper.loopOnce(Looper.java:249)
+	at android.os.Looper.loop(Looper.java:339)
+	at android.app.ActivityThread.main(ActivityThread.java:9785)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:618)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1022)
+	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [StandaloneCoroutine{Cancelling}@95a4b36, Dispatchers.IO]
+

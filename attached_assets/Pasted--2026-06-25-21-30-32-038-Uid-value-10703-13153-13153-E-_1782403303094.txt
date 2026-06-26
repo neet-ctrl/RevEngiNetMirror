@@ -1,0 +1,101 @@
+[2026-06-25 21:30:32.038 Uid(value=10703):13153:13153 E/AndroidRuntime]
+FATAL EXCEPTION: main
+Process: com.external.castle, PID: 13153
+java.lang.RuntimeException: Unable to instantiate application com.gxgx.daqiandy.app.DqApplication package com.external.castle: java.lang.ClassNotFoundException: Didn't find class "com.gxgx.daqiandy.app.DqApplication" on path: DexPathList[[zip file "/data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk"],nativeLibraryDirectories=[/data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/lib/arm64, /data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64, /tr_product/lib64]]
+	at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1521)
+	at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1442)
+	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:8026)
+	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(ActivityThread.java:0)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2674)
+	at android.os.Handler.dispatchMessage(Handler.java:110)
+	at android.os.Looper.loopOnce(Looper.java:327)
+	at android.os.Looper.loop(Looper.java:431)
+	at android.app.ActivityThread.main(ActivityThread.java:9329)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:629)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1024)
+Caused by: java.lang.ClassNotFoundException: Didn't find class "com.gxgx.daqiandy.app.DqApplication" on path: DexPathList[[zip file "/data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk"],nativeLibraryDirectories=[/data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/lib/arm64, /data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64, /tr_product/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:644)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:580)
+	at android.app.AppComponentFactory.instantiateApplication(AppComponentFactory.java:76)
+	at android.app.Instrumentation.newApplication(Instrumentation.java:1351)
+	at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1514)
+	... 11 more
+	Suppressed: java.io.IOException: Failed to open dex files from /data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk because: Failure to verify dex file '/data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk': outs_size (8d) > registers_size (5d)
+		at dalvik.system.DexFile.openDexFileNative(Native Method)
+		at dalvik.system.DexFile.openDexFile(DexFile.java:406)
+		at dalvik.system.DexFile.<init>(DexFile.java:128)
+		at dalvik.system.DexFile.<init>(DexFile.java:101)
+		at dalvik.system.DexPathList.loadDexFile(DexPathList.java:438)
+		at dalvik.system.DexPathList.makeDexElements(DexPathList.java:397)
+		at dalvik.system.DexPathList.<init>(DexPathList.java:166)
+		at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+		at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:130)
+		at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:146)
+		at com.android.internal.os.ClassLoaderFactory.createClassLoader(ClassLoaderFactory.java:93)
+		at com.android.internal.os.ClassLoaderFactory.createClassLoader(ClassLoaderFactory.java:134)
+		at android.app.ApplicationLoaders.getClassLoader(ApplicationLoaders.java:126)
+		at android.app.ApplicationLoaders.getClassLoaderWithSharedLibraries(ApplicationLoaders.java:61)
+		at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:1055)
+		at android.app.LoadedApk.getClassLoader(LoadedApk.java:1155)
+		at android.app.LoadedApk.getResources(LoadedApk.java:1417)
+		at android.app.ContextImpl.createAppContext(ContextImpl.java:3656)
+
+
+[2026-06-25 21:30:32.038 Uid(value=10703):13153:13153 E/AndroidRuntime]
+		at android.app.ContextImpl.createAppContext(ContextImpl.java:3647)
+		at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7943)
+		... 9 more
+
+
+[2026-06-25 21:30:50.182 Uid(value=10703):13578:13578 E/AndroidRuntime]
+FATAL EXCEPTION: main
+Process: com.external.castle, PID: 13578
+java.lang.RuntimeException: Unable to instantiate application com.gxgx.daqiandy.app.DqApplication package com.external.castle: java.lang.ClassNotFoundException: Didn't find class "com.gxgx.daqiandy.app.DqApplication" on path: DexPathList[[zip file "/data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk"],nativeLibraryDirectories=[/data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/lib/arm64, /data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64, /tr_product/lib64]]
+	at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1521)
+	at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1442)
+	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:8026)
+	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(ActivityThread.java:0)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2674)
+	at android.os.Handler.dispatchMessage(Handler.java:110)
+	at android.os.Looper.loopOnce(Looper.java:327)
+	at android.os.Looper.loop(Looper.java:431)
+	at android.app.ActivityThread.main(ActivityThread.java:9329)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:629)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1024)
+Caused by: java.lang.ClassNotFoundException: Didn't find class "com.gxgx.daqiandy.app.DqApplication" on path: DexPathList[[zip file "/data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk"],nativeLibraryDirectories=[/data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/lib/arm64, /data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64, /tr_product/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:644)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:580)
+	at android.app.AppComponentFactory.instantiateApplication(AppComponentFactory.java:76)
+	at android.app.Instrumentation.newApplication(Instrumentation.java:1351)
+	at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1514)
+	... 11 more
+	Suppressed: java.io.IOException: Failed to open dex files from /data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk because: Failure to verify dex file '/data/app/~~RHhqZc2mtx9exsx8jp1bPQ==/com.external.castle-LpGuKF2ONQYBYGYYA9FiGw==/base.apk': outs_size (8d) > registers_size (5d)
+		at dalvik.system.DexFile.openDexFileNative(Native Method)
+		at dalvik.system.DexFile.openDexFile(DexFile.java:406)
+		at dalvik.system.DexFile.<init>(DexFile.java:128)
+		at dalvik.system.DexFile.<init>(DexFile.java:101)
+		at dalvik.system.DexPathList.loadDexFile(DexPathList.java:438)
+		at dalvik.system.DexPathList.makeDexElements(DexPathList.java:397)
+		at dalvik.system.DexPathList.<init>(DexPathList.java:166)
+		at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+		at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:130)
+		at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:146)
+		at com.android.internal.os.ClassLoaderFactory.createClassLoader(ClassLoaderFactory.java:93)
+		at com.android.internal.os.ClassLoaderFactory.createClassLoader(ClassLoaderFactory.java:134)
+		at android.app.ApplicationLoaders.getClassLoader(ApplicationLoaders.java:126)
+		at android.app.ApplicationLoaders.getClassLoaderWithSharedLibraries(ApplicationLoaders.java:61)
+		at android.app.LoadedApk.createOrUpdateClassLoaderLocked(LoadedApk.java:1055)
+		at android.app.LoadedApk.getClassLoader(LoadedApk.java:1155)
+		at android.app.LoadedApk.getResources(LoadedApk.java:1417)
+		at android.app.ContextImpl.createAppContext(ContextImpl.java:3656)
+
+
+[2026-06-25 21:30:50.182 Uid(value=10703):13578:13578 E/AndroidRuntime]
+		at android.app.ContextImpl.createAppContext(ContextImpl.java:3647)
+		at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7943)
+		... 9 more
+

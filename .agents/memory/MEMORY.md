@@ -1,0 +1,1 @@
+- [Castle APK patching conclusions](castle-apk-patch-conclusions.md) — 10-min stream limit is server-enforced; 16 patches achieve max client-side result (no dialog/lock/timer/trailer).

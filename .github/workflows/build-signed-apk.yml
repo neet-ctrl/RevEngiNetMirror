@@ -1,0 +1,152 @@
+name: Build Signed Calc APK
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install apktool
+        run: |
+          wget -q https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool
+          wget -q https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.11.1.jar -O /usr/local/bin/apktool.jar
+          chmod +x /usr/local/bin/apktool
+          apktool --version
+
+      - name: Install apksigner
+        run: |
+          sudo apt-get install -y apksigner
+
+      - name: Decompile base APK
+        run: |
+          apktool d apks/base.apk -o decompiled_app --force
+
+      - name: Patch smali - Add Calc Premium Overlay
+        run: |
+          SMALI="decompiled_app/smali/com/digitaltool/mobiletoolbox/smarttoolbox/MainActivity.smali"
+          
+          # Check the overlay is not already patched
+          if grep -q "Calc Premium Overlay" "$SMALI"; then
+            echo "Already patched, skipping."
+          else
+            # Inject before return-void in onCreate
+            python3 - <<'PYEOF'
+          import re
+
+          smali_path = "decompiled_app/smali/com/digitaltool/mobiletoolbox/smarttoolbox/MainActivity.smali"
+
+          overlay_code = '''
+              # --- BEGIN: Calc Premium Overlay ---
+              invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+              move-result-object v0
+              invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+              move-result-object v0
+              check-cast v0, Landroid/view/ViewGroup;
+              new-instance v1, Landroid/widget/TextView;
+              invoke-direct {v1, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+              const-string v2, " Calc "
+              invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+              const/4 v2, -0x1
+              invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
+              const/4 v2, 0x2
+              const v3, 0x41800000
+              invoke-virtual {v1, v2, v3}, Landroid/widget/TextView;->setTextSize(IF)V
+              sget-object v2, Landroid/graphics/Typeface;->DEFAULT_BOLD:Landroid/graphics/Typeface;
+              invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
+              const v2, -0x2900
+              invoke-virtual {v1, v2}, Landroid/widget/TextView;->setBackgroundColor(I)V
+              const/16 v2, 0x14
+              const/16 v3, 0x8
+              invoke-virtual {v1, v2, v3, v2, v3}, Landroid/widget/TextView;->setPadding(IIII)V
+              new-instance v2, Landroid/widget/FrameLayout$LayoutParams;
+              const/4 v3, -0x2
+              const v4, 0x800035
+              invoke-direct {v2, v3, v3, v4}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
+              invoke-virtual {v0, v1, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+              # --- END: Calc Premium Overlay ---
+          '''
+
+          with open(smali_path, 'r') as f:
+              content = f.read()
+
+          # Find onCreate method's return-void
+          pattern = r'(    invoke-static \{p0, v0\}, Lc/d;->a\(Lb/p;Ln3/d;\)V\n)((?:\n.*\.line.*\n)*\n    return-void\n\.end method)'
+          replacement = r'\1' + overlay_code + r'\2'
+          new_content = re.sub(pattern, replacement, content, count=1)
+
+          if new_content == content:
+              # Fallback: simple injection before last return-void in onCreate
+              # Find onCreate and its return-void
+              oncreate_start = content.find('.method public final onCreate(Landroid/os/Bundle;)V')
+              if oncreate_start != -1:
+                  oncreate_end = content.find('.end method', oncreate_start)
+                  oncreate_block = content[oncreate_start:oncreate_end]
+                  last_return = oncreate_block.rfind('    return-void')
+                  if last_return != -1:
+                      insert_pos = oncreate_start + last_return
+                      new_content = content[:insert_pos] + overlay_code + '\n' + content[insert_pos:]
+                      print("Patched via fallback method")
+                  else:
+                      print("ERROR: Could not find return-void in onCreate")
+                      exit(1)
+              else:
+                  print("ERROR: Could not find onCreate method")
+                  exit(1)
+          else:
+              print("Patched via primary method")
+
+          with open(smali_path, 'w') as f:
+              f.write(new_content)
+
+          print("Smali patch applied successfully.")
+          PYEOF
+          fi
+
+      - name: Rebuild APK
+        run: |
+          mkdir -p output
+          apktool b decompiled_app -o output/calc_unsigned.apk --use-aapt2
+
+      - name: Decode keystore
+        run: |
+          mkdir -p signing
+          echo "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" | base64 -d > signing/my-release-key.jks
+          keytool -list -keystore signing/my-release-key.jks -storepass 'Sh@090609' -alias my-key
+          echo "Keystore decoded and verified."
+
+      - name: Sign APK
+        run: |
+          apksigner sign \
+            --ks signing/my-release-key.jks \
+            --ks-pass pass:'Sh@090609' \
+            --ks-key-alias my-key \
+            --key-pass pass:'Sh@090609' \
+            --out output/calc_signed.apk \
+            --v1-signing-enabled true \
+            --v2-signing-enabled true \
+            --v3-signing-enabled true \
+            output/calc_unsigned.apk
+
+      - name: Verify signed APK
+        run: |
+          apksigner verify --verbose output/calc_signed.apk
+
+      - name: Upload signed APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: calc-signed-apk
+          path: output/calc_signed.apk
+          retention-days: 30

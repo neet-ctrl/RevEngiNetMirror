@@ -1,0 +1,74 @@
+[2026-06-25 17:37:20.666 Uid(value=10700):18587:18587 E/AndroidRuntime]
+FATAL EXCEPTION: main
+Process: com.external.castle, PID: 18587
+java.lang.RuntimeException: Unable to get provider com.gxgx.daqiandy.app.AppStateProvider: java.lang.IllegalStateException
+	at android.app.ActivityThread.installProvider(ActivityThread.java:8891)
+	at android.app.ActivityThread.installContentProviders(ActivityThread.java:8396)
+	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:8053)
+	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(ActivityThread.java:0)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2674)
+	at android.os.Handler.dispatchMessage(Handler.java:110)
+	at android.os.Looper.loopOnce(Looper.java:327)
+	at android.os.Looper.loop(Looper.java:431)
+	at android.app.ActivityThread.main(ActivityThread.java:9329)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:629)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1024)
+Caused by: java.lang.IllegalStateException
+	at com.gxgx.daqiandy.app.AppSync.b(AppSync.java:52)
+	at com.gxgx.daqiandy.app.AppStateProvider.onCreate(AppStateProvider.java:16)
+	at android.content.ContentProvider.attachInfo(ContentProvider.java:2701)
+	at android.content.ContentProvider.attachInfo(ContentProvider.java:2670)
+	at android.app.ActivityThread.installProvider(ActivityThread.java:8886)
+	... 11 more
+
+
+[2026-06-25 17:37:25.270 Uid(value=10700):18900:18900 E/AndroidRuntime]
+FATAL EXCEPTION: main
+Process: com.external.castle, PID: 18900
+java.lang.RuntimeException: Unable to get provider com.gxgx.daqiandy.app.AppStateProvider: java.lang.IllegalStateException
+	at android.app.ActivityThread.installProvider(ActivityThread.java:8891)
+	at android.app.ActivityThread.installContentProviders(ActivityThread.java:8396)
+	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:8053)
+	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(ActivityThread.java:0)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2674)
+	at android.os.Handler.dispatchMessage(Handler.java:110)
+	at android.os.Looper.loopOnce(Looper.java:327)
+	at android.os.Looper.loop(Looper.java:431)
+	at android.app.ActivityThread.main(ActivityThread.java:9329)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:629)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1024)
+Caused by: java.lang.IllegalStateException
+	at com.gxgx.daqiandy.app.AppSync.b(AppSync.java:52)
+	at com.gxgx.daqiandy.app.AppStateProvider.onCreate(AppStateProvider.java:16)
+	at android.content.ContentProvider.attachInfo(ContentProvider.java:2701)
+	at android.content.ContentProvider.attachInfo(ContentProvider.java:2670)
+	at android.app.ActivityThread.installProvider(ActivityThread.java:8886)
+	... 11 more
+
+
+[2026-06-25 17:37:34.773 Uid(value=10700):19147:19147 E/AndroidRuntime]
+FATAL EXCEPTION: main
+Process: com.external.castle, PID: 19147
+java.lang.RuntimeException: Unable to get provider com.gxgx.daqiandy.app.AppStateProvider: java.lang.IllegalStateException
+	at android.app.ActivityThread.installProvider(ActivityThread.java:8891)
+	at android.app.ActivityThread.installContentProviders(ActivityThread.java:8396)
+	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:8053)
+	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(ActivityThread.java:0)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2674)
+	at android.os.Handler.dispatchMessage(Handler.java:110)
+	at android.os.Looper.loopOnce(Looper.java:327)
+	at android.os.Looper.loop(Looper.java:431)
+	at android.app.ActivityThread.main(ActivityThread.java:9329)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:629)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1024)
+Caused by: java.lang.IllegalStateException
+	at com.gxgx.daqiandy.app.AppSync.b(AppSync.java:52)
+	at com.gxgx.daqiandy.app.AppStateProvider.onCreate(AppStateProvider.java:16)
+	at android.content.ContentProvider.attachInfo(ContentProvider.java:2701)
+	at android.content.ContentProvider.attachInfo(ContentProvider.java:2670)
+	at android.app.ActivityThread.installProvider(ActivityThread.java:8886)
+	... 11 more
+
